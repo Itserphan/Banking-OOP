@@ -7,9 +7,6 @@ class Account:
         self.holder_account = holder_account
         self.balance = initial_balance
         self.status = status
-    # def number_account(self):
-    #     self.number_account() = random.randint(10000,20000)
-    # روش دلخواه من
     def deposit(self, amount):
         self.balance += amount
         return f"Deposited {amount} to account {self.number_account}. New balance: {self.balance}"
@@ -58,7 +55,7 @@ class Bank:
                     return "Invalid transaction type."
         return f"Account {account_number} not found."
 
-    #mahal neveshte shodan etelaat hesab karbari
+    
     def report_generate(self):
         report = {"accounts": []}
         for account in self.accounts:
@@ -77,4 +74,4 @@ print(bank.perform_transaction(1, "deposit", 200))
 print(bank.perform_transaction(2, "withdraw", 100))
 print(bank.report_generate())
 
-#csv balad naboodam.
+
